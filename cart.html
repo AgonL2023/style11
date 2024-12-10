@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link 
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <!--Menu Icon-->
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <!--Logo-->
+            <a href="index.html" class="logo">Amiga</a>
+        
+        <!--Navbar-->
+        <div class="navbar">
+            <a href="#" class="nav-link">Clothes</a>
+            <a href="#" class="nav-link">News</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Contact Us</a>
+        </div>
+
+        <!--Cart Icon-->
+    <a href="cart.html">
+        <i class="bx bx-shopping-bag" id="cart-icon" data-quantity="0"></i>
+    </a>
+    </div>
+</header>
+<!--Cart-->
+<section class="cart-container container">
+    <a href="index.html" class="back-hompage">
+        <i class='bx bx-chevron-left' ></i>
+        <span>Back To Home</span>
+    </a>
+    <h2 class="cart-s-title">Shopping Cart</h2>
+    <div class="cart-box">
+    <div class="cart-data">
+        <div id="cartItems"></div>
+      </div>
+      <div class="cart-t">
+        <div id="cartTotal"></div>
+        <a href="#" class="checkout-btn">Checkout</a>
+      </div>
+    </div>
+</section>
+    <!--Link To JS-->
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

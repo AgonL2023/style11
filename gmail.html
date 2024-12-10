@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ecommerce Website</title>
+	<link rel="stylesheet" href="gmail.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <style>/* Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@400..900&display=swap');
+    *{
+      font-family: "Big Shoulders Text", sans-serif;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      scroll-padding-top: 2rem;
+      text-decoration: none;
+      list-style: none;
+    }
+    /* Some variables */
+    :root {
+      --main-color: #0eb892;
+      --text-color: #000;
+      --bg-color: #fff;
+      --container-color: #1e1e2a;
+    }
+    body{
+      color: var(--text-color);
+      background: var(--bg-color);
+    }
+    img{
+      width: 100%;
+    }
+    section{
+      padding: 4rem 0 2rem;
+    }
+    header.shadow{
+      background: #f2f0f1;
+      box-shadow: 0 1px 4px hsl(0, 4%, 15%, 0.1);
+      transition: 0.5s ease;
+    }
+    header{
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
+    
+    .nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px 0;
+      margin-left: 10px;
+    }
+    #menu-icon{
+      font-size: 28px;
+      cursor: pointer;
+      color: var(--main-color);
+      display: none;
+    }
+    .logo{
+      font-size: 1.5rem;
+      color: var(--main-color);
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .navbar{
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+    }
+    .nav-link{
+      font-size: 1.025rem;
+      color: var(--main-color);
+      font-weight: 700;
+    }
+    #cart-icon{
+      position: relative;
+      font-size: 1.8rem;
+      color: var(--main-color);
+      cursor: pointer;
+      margin-right: 30px;
+    }
+    #cart-icon[data-quantity="0"]::after{
+      content: "";
+    }
+    #cart-icon[data-quantity]::after{
+      content: attr(data-quantity);
+      position: absolute;
+      top: 0;
+      right: -11px;
+      width: 20px;
+      height: 20px;
+      background: var(--main-color);
+      border-radius: 50%;
+      color: var(--bg-color);
+      font-size: 12px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    </style>
+	<header>
+        <div class="nav containerr">
+          <i class='bx bx-menu' id="menu-icon"></i>
+          <a href="index.html" class="logo">Amiga</a>
+  
+          <div class="navbar">
+            <a href="index.html" class="nav-link">Clothes</a>
+            <a href="index2.html" class="nav-link">Coming Soon</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="gmail.html" class="nav-link">Contact Us</a>
+          </div>
+          <a href="cart.html">
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+          </a>
+        </div>
+      </header>
+
+
+
+
+	<div class="container">
+		<form method="post" action="https://script.google.com/macros/s/AKfycbypHCIT3ymuQH0mG7TZZQYtKRVHgLK3NsApF07HwXIRykeyLdK_gEt4eLB7N0lACd4D/exec" name="contact-form">
+			<h4>Contact Us</h4>
+			<input type="text" name="your-name" placeholder="Name">
+			<input type="text" name="your-number" placeholder="Number">
+			<input type="email" name="your-email" placeholder="Email">
+			<textarea name="message" rows="7" placeholder="Your Message"></textarea>
+			<input type="submit" value="Submit" id="submit">
+            <h1>Read Below</h1>
+		</form>
+	</div>
+
+    <section class="features">
+        <div class="feature">
+          <span class="icon">&#128274;</span>
+          <h2>Secure payment</h2>
+          <p>Pay with the world's most popular and secure payment methods.</p>
+        </div>
+        <div class="feature">
+          <span class="icon">&#10003;</span>
+          <h2>Buy with confidence</h2>
+          <p>Our buyer protection policy covers your entire buying journey.</p>
+        </div>
+        <div class="feature">
+          <span class="icon">&#128222;</span>
+          <h2>Buy with confidence</h2>
+          <p>Round the clock assistance for a smooth shopping experience. 081230821</p>
+        </div>
+        <div class="feature">
+          <span class="icon">&#128241;</span>
+          <h2>Buy better</h2>
+          <p>Download the AmigaStyle application on your mobile and get information about new products that will come. Install android,ios.</p>
+        </div>
+      </section>
+
+	<script src="js/sheet.js"></script>
+	<script src="js/menu.js"></script>
+    <script src="main.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+
+body{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container{
+	margin-top: 100px;
+    margin-inline: auto;
+    width: 980px;
+    padding: 30px;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    background-color: #0eb892;
+    height: 760px;
+}
+
+h4{
+	margin-bottom: 10px;
+	font-size: 24px;
+	color: white;
+}
+input{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+textarea{
+	width: 100%;
+	padding: 10px;
+}
+#submit{
+	border: none;
+	background-color: #7e00ff;
+	color: white;
+	width: 200px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+#submit:hover{
+	background-color: #333333;
+}
+h1{
+    text-align: center;
+    margin-top: 70px;
+    font-size: -webkit-xxx-large;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@400..900&display=swap');
+*{
+  font-family: "Big Shoulders Text", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  text-decoration: none;
+  list-style: none;
+}
+/* Some variables */
+:root {
+  --main-color: #0eb892;
+  --text-color: #000;
+  --bg-color: #fff;
+  --container-color: #1e1e2a;
+}
+body{
+    display: block;
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+section{
+  padding: 4rem 0 2rem;
+}
+.containerr{
+  max-width: 1070;
+  margin: auto;
+  width: 100%;
+}
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+header.shadow{
+  background: #f2f0f1;
+  box-shadow: 0 1px 4px hsl(0, 4%, 15%, 0.1);
+  transition: 0.5s ease;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+#menu-icon{
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--main-color);
+  display: none;
+}
+.logo{
+  font-size: 1.5rem;
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.nav-link{
+  font-size: 1.025rem;
+  color: var(--main-color);
+  font-weight: 700;
+}
+#cart-icon{
+  position: relative;
+  font-size: 1.8rem;
+  color: var(--main-color);
+  cursor: pointer;
+}
+#cart-icon[data-quantity="0"]::after{
+  content: "";
+}
+#cart-icon[data-quantity]::after{
+  content: attr(data-quantity);
+  position: absolute;
+  top: 0;
+  right: -11px;
+  width: 20px;
+  height: 20px;
+  background: var(--main-color);
+  border-radius: 50%;
+  color: var(--bg-color);
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+@media (max-width: 910px){
+  .nav{
+    padding: 18px 0;
+  }
+  .container{
+    width: 800px;
+  }
+}
+
+@media (max-width: 550px){
+  #menu-icon{
+    display: initial;
+  }
+  .navbar{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: #f2f0f1;
+    row-gap: 0.5rem;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 20px 20px rgb(15 54 55 / 20%);
+    clip-path: circle(0% at 0% 0%);
+    transition: 0.6s;
+  }
+  .nav-link{
+    display: block;
+    padding: 15px;
+  }
+  .navbar.open-menu{
+    clip-path: circle(144% at 0% 0%);
+  }
+  .home{
+    min-height: 520px;
+  }
+  .home-img::before {
+    font-size: 4rem;
+    top: -26px;
+  }
+  .heading{
+    font-size: 2.5rem;
+  }
+  .product-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
+/*---------------------------THIRJE-----------------------------------------*/
+.features {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  .feature {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .feature h2 {
+    color: #333;
+  }
+  
+  .icon {
+    font-size: 24px;
+  }
+  
+  
+
+  
+  .body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
+  }
+
+  .container_1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .container_1 .progres{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: #fff;
+    background: #444 linear-gradient(to right, transparent 50%, var(--clr) 0);
+  }
+  .container_1 .progres h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.5rem;
+    z-index: 1;
+    font-weight: 500;
+  }
+
+  .container_1 .progres h3 span{
+    font-size: 0.65em;
+    font-weight: 400;
+  }
+
+  .container_1 .progres h4{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-weight: 500;
+    color: var(--clr);
+    text-transform: uppercase;
+  }
+
+  .container_1 .progres::before{
+    content: '';
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50;
+  }
+  .container_1 .progres::after{
+    content: '';
+    position: absolute;
+    inset: 10px;
+    border-radius: 50%;
+    background: #222;
+  }
